@@ -6,7 +6,6 @@ import './App.css';
 
 //BOOTSTRAP
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Container from 'react-bootstrap/Container';
 
 //COMPONENTS
 import Body from './components/Body';
@@ -32,6 +31,14 @@ function App() {
     setIsOpen(!isOpen)
     setSideNavWidth(newState);
   };
+
+  
+  //will run only once!!!
+  useEffect(() => {
+    // SET BODY DATA
+    setBodyData(input_data.en.data);
+  }, [])
+
   const handleClick = e => {
     if (node.current.contains(e.target)) {
       // inside click
@@ -40,13 +47,6 @@ function App() {
     // outside click: close navbar
     toggleNav();
   };
-  
-  //will run only once!!!
-  useEffect(() => {
-    // SET BODY DATA
-    setBodyData(input_data.en.data);
-  }, [])
-
   // CLICK OUTSIDE NAVBAR
   useEffect(() => {
     if (isOpen) {
@@ -62,6 +62,7 @@ function App() {
 
   //updates everytime the language changes
   useEffect(()=>{
+    
     setBodyData(input_data[language]["data"])
     setTitle(input_data[language]['title'])
   }, [language])
@@ -104,7 +105,7 @@ function App() {
       {/* NAVBAR */}
       
       {/* end of navbar */}
-      <Container className="bg">
+      <div className="bg">
           {/* MAIN TITLE */}
         <div className="main-title">
           {title}
@@ -126,7 +127,7 @@ function App() {
               );
           })
         }
-      </Container>
+      </div>
     </div>
   );
 }

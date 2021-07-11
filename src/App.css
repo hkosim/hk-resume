@@ -1,9 +1,10 @@
 .bg{
   background: white;
   border: 0.2em solid black;
-  width: 210mm;
+  width: 300mm;
   height: auto;
-  margin:0.2em;
+  margin:auto;
+  padding:1em;
 }
 
 /* SIDENAV */
@@ -133,6 +134,7 @@
   display:flex;
   padding:0.1em;
   font: 1.3em "Cambria";
+  text-align:center;
 }
 
 .table-content{

@@ -458,7 +458,7 @@ const input_data ={
                                     desc:"Sehr gut in Wort und Schrift, IELTS Academic (Note: 7 von 9)."
                                 },
                                 {
-                                    title:"Englisch",
+                                    title:"Deutsch",
                                     desc:"Gut in Wort und Schrift, C1 Niveau."
                                 }
                             ]

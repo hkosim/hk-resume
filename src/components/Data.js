@@ -9,14 +9,16 @@ const input_data ={
             {
               type: "img",
               width: "50%",
+              imgwidth:"auto",
+              imgheight: "15em",
               content:[
-                "https://png.pngtree.com/png-vector/20200417/ourlarge/pngtree-cute-chicken-cartoon-illustration-png-image_2184671.jpg"
+                "pic_compressed.png"
               ]
             },
             {
               type: "table",
               width: "40%",
-              firstcolumnwidth:"47.5%",
+              firstcolumnwidth:"35%",
               content:[
                 {
                     label:"First Name",
@@ -28,11 +30,11 @@ const input_data ={
                 },
                 {
                     label:"Nationality",
-                    data:[{ title:"Indonesien", desc:""}]
+                    data:[{ title:"Indonesian", desc:""}]
                 },
                 {
                     label:"E-mail",
-                    data:[{ title:"email@email.com", desc:""}]
+                    data:[{ title:"henrykosim@gmail.com", desc:""}]
                 },
               ]
             }
@@ -266,35 +268,37 @@ const input_data ={
     title:"LEBENSLAUF",
     data:[
       {
-          subtitle:'PERSONAL INFORMATION',
+          subtitle:'PERSÖNLICHE INFORMATION',
           contents:[
             {
               type: "img",
               width: "50%",
+              imgwidth:"auto",
+              imgheight: "15em",
               content:[
-                "https://png.pngtree.com/png-vector/20200417/ourlarge/pngtree-cute-chicken-cartoon-illustration-png-image_2184671.jpg"
+                "pic_compressed.png"
               ]
             },
             {
               type: "table",
               width: "40%",
-              firstcolumnwidth:"47.5%",
+              firstcolumnwidth:"35%",
               content:[
                 {
-                    label:"First Name",
+                    label:"Vorname",
                     data:[{ title:"Henry", desc:""}]
                 },
                 {
-                    label:"Last Name",
+                    label:"Familienname",
                     data:[{ title:"Kosim", desc:""}]
                 },
                 {
-                    label:"Nationality",
+                    label:"Nationalität",
                     data:[{ title:"Indonesien", desc:""}]
                 },
                 {
                     label:"E-mail",
-                    data:[{ title:"email@email.com", desc:""}]
+                    data:[{ title:"henrykosim@gmail.com", desc:""}]
                 },
               ]
             }
@@ -302,7 +306,7 @@ const input_data ={
         }, //end of 1st body
         //second body
         {
-          subtitle:'EDUCATION BACKGROUND',
+          subtitle:'SCHULE UND STUDIUM ',
           contents:[
             {
               type: "table-period",
@@ -315,7 +319,7 @@ const input_data ={
                     to:"05/2013",
                     data:[
                         {
-                            title:"Canisius College Catholic Junior High School, Jakarta.",
+                            title:"Katholische Mittelschule Canisius College, Jakarta.",
                             desc:""
                         }
                     ]
@@ -326,7 +330,7 @@ const input_data ={
                     to:"05/2016",
                     data:[
                         {
-                            title:"Canisius College Catholic Senior High School, Jakarta.",
+                            title:"Katholische Oberschule Canisius College, Jakarta.",
                             desc:""
                         }
                     ]
@@ -337,8 +341,8 @@ const input_data ={
                     to:"07/2020",
                     data:[
                         {
-                            title:"Bachelor’s Degree in Information Engineering at Universitas Gadjah Mada, Yogyakarta, Central Java.",
-                            desc:"Title: S.T. Information Engineering (equals to Bachelor of Engineering)"
+                            title:"Informatik (Information Engineering) Studium an der Universität „Universitas Gadjah Mada“, Yogyakarta, Mittel Java.",
+                            desc:"Titel: S.T. Information Engineering (entspricht Diplom Ingenieur in Deutschland)"
                         }
                     ]
                 }, //end of third data
@@ -362,7 +366,7 @@ const input_data ={
                     to:"10/2016",
                     data:[
                         {
-                            title:"Web Development and Design Seminar, Yogyakarta.",
+                            title:"Web-Entwicklung und Design Seminar, Yogyakarta.",
                             desc:"",
                         }
                     ]
@@ -373,7 +377,7 @@ const input_data ={
                     to:"03/2018",
                     data:[
                         {
-                            title:"National VR and AR Seminar, Yogyakarta.",
+                            title:"Nationales VR und AR Seminar, Yogyakarta.",
                             desc:""
                         }
                     ]
@@ -384,7 +388,7 @@ const input_data ={
                     to:"06/2021",
                     data:[
                         {
-                            title:"German Language Course Level B2 – C1.2 at Goethe-Institut, Jakarta.",
+                            title:"Deutschkurs Niveau B2 – C1.2 am Goethe-Institut, Jakarta.",
                             desc:""
                         }
                     ]
@@ -395,7 +399,7 @@ const input_data ={
         },//end of third body
         //fourth body
         {
-          subtitle:'WORK EXPERIENCES',
+          subtitle:'BERUFLICHER WERDEGANG',
           contents:[
             {
               type: "table-period",
@@ -408,8 +412,8 @@ const input_data ={
                     to:"02/2019",
                     data:[
                         {
-                            title:"Internship in Software Development Department at Indonesian Cloud, Jakarta.",
-                            desc:"My team and I were assigned to design and create a dashboard system that could read internal management data such as the absence of workers and worker’s productivity. The whole dashboard system was designed from scratch from the design of the database system and was deployed for internal use."
+                            title:"Praktikum im Software-Entwicklung-Gebiet bei IT-Firma „Indonesian Cloud“, Jakarta.",
+                            desc:"Unser Team wurde beauftragt, ein Dashboard-System zu entwerfen und zu erstellen, Beobachtung und Überprüfung in den internen Managementdaten wie Abwesenheit und Produktivität von den Mitarbeitern. Wir fangen von Grundlage an bis zur der Entwicklung des Mock-Ups. "
                         }
                     ]
                 },
@@ -419,8 +423,8 @@ const input_data ={
                     to:"12/2020",
                     data:[
                         {
-                            title:"Assistant Professor in Digital Talent Scholarship 2020, Jakarta.",
-                            desc:"Digital Talent Scholarship is a training program that was led by the Ministry of Communication and Informatics. The program was taught by experts like professors or prominent institution. I assisted the professors through the program as an assistant and did various tasks such as grading the participant’s works, revising the modules, and teaching the participants."
+                            title:"Als Assistent von Professoren bei „Digital Talent Scholarship“ 2020, Jakarta.",
+                            desc:"Digital Talent Scholarship ist ein Ausbildungsprogramm, das vom Ministerium für Kommunikation und Informatik geleitet wurde. Das Programm wurde von Experten wie Professoren oder renommierten Institutionen unterstützt. Ich habe die Professoren während des Seminars assistiert. Die Aufträge des Assistenten sind u.a. die Module zu überprüfen, die Aufgaben der Teilnehmer/-innen zu bewerten und die Seminarteilnehmer/-innen zu unterrichten."
                         }
                     ]
                 },
@@ -430,7 +434,7 @@ const input_data ={
         },//end of fourth body
         //fifth body
         {
-            subtitle:"LANGUAGE",
+            subtitle:"SPRACHEN",
             contents:[
                 {
                     type:"table",
@@ -438,24 +442,24 @@ const input_data ={
                     firstcolumnwidth:"23%",
                     content:[
                         {
-                            label:"Mother Language",
+                            label:"Muttersprache",
                             data:[
                                 {
-                                    title:"Indonesian",
+                                    title:"Indonesisch",
                                     desc:""
                                 }
                             ]
                         },
                         {
-                            label:"Another Language",
+                            label:"Fremdsprachen",
                             data:[
                                 {
-                                    title:"English",
-                                    desc:"Advanced, IELTS Academic (Score: 7 from 9)."
+                                    title:"Englisch",
+                                    desc:"Sehr gut in Wort und Schrift, IELTS Academic (Note: 7 von 9)."
                                 },
                                 {
-                                    title:"German",
-                                    desc:"Upper-Intermediate (Level C1)."
+                                    title:"Englisch",
+                                    desc:"Gut in Wort und Schrift, C1 Niveau."
                                 }
                             ]
                         },
@@ -465,7 +469,7 @@ const input_data ={
         }, //end of fifth body
         //sixth body
         {
-            subtitle:"ACHIEVEMENT",
+            subtitle:"HERVORRAGENDE LEISTUNG",
             contents:[
                 {
                     type:"table-period",
@@ -478,7 +482,7 @@ const input_data ={
                             to:"12/2020",
                             data:[
                                 {
-                                    title:"1st place in IT-Competition “Business IT Case Find-IT”, Yogyakarta. ",
+                                    title:"Als Sieger des IT-Wettbewerbs „Business IT-Case Find-IT“, Yogyakarta.",
                                     desc:""
                                 }
                             ]
@@ -489,7 +493,7 @@ const input_data ={
         }, //end of sixth body
         // seventh body
         {
-            subtitle:"HOBBIES AND INTERESTS",
+            subtitle:"HOBBYS UND INTERESSE",
             contents:[
                 {
                     type:"table",
@@ -500,19 +504,19 @@ const input_data ={
                             label:"",
                             data:[
                                 {
-                                    title:"Music, especially Piano",
+                                    title:"Klavier spielen",
                                     desc:""
                                 },
                                 {
-                                    title:"Cooking",
+                                    title:"Kochen",
                                     desc:""
                                 },
                                 {
-                                    title:"Swimming",
+                                    title:"Schwimmen",
                                     desc:""
                                 },
                                 {
-                                    title:"Travelling",
+                                    title:"Reisen",
                                     desc:""
                                 },
                             ]

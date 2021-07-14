@@ -1,0 +1,302 @@
+@mixin bg-style{
+  background: white;
+  border: 0.2em solid black;
+  height: auto;
+  margin:auto;
+}
+@mixin all-sidenav-style{
+  transition: 0.5s;
+  overflow-x: hidden;
+}
+@mixin sidenav-style{
+  @include all-sidenav-style;
+  position: fixed;
+  height:5em;
+  z-index: 1;
+  top: 0;
+  right: 0;
+}
+//MIXIN SIDENAV
+@mixin sidenav-button-style{
+  @include all-sidenav-style;
+  position: absolute;
+  width: 4em;
+  float:left;
+  top: 0;
+  left: 0;
+  padding-top:0.8em;
+}
+@mixin sidenav-button-span{
+  background:white;
+  float:right;
+  border:1px solid black;
+  cursor:pointer;
+  margin:0 0.3em 0 1.3em;
+  padding:0 0.5em 0 0.5em;
+}
+@mixin sidenav-content-style{
+  @include all-sidenav-style;
+  height: 100%;
+  float:right;
+  top: 0;
+  right:0;
+  padding-top:0.8em;
+  padding-left: 0.1em;
+  padding-bottom: 0;
+}
+@mixin main-title-style{
+  text-align:center;
+  font: 2.5em  Arial, sans-serif;
+  padding: 0.5em 0 0.5em 0;
+  margin-top: 0.5em;
+}
+@mixin sub-title-style{
+  font: 1.6em  Arial;
+  width:100%;
+  margin: 0.8em 0 0.8em;
+}
+//MIXIN BOX
+@mixin box-container-style{
+  display:flex;
+  flex-wrap:wrap;
+  width:100%;
+}
+@mixin img-box-style{
+  padding:0.3em;
+}
+@mixin img-box-img-style{
+  display: block;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+// MIXIN TABLE
+@mixin table-container-style{
+  display:flex;
+  text-align:left;
+  padding:0.3em;
+  width:100%;
+}
+@mixin table-content-style{
+  display:flex;
+  flex-direction:column;
+  width:100%;
+  padding: 0.1em;
+}
+@mixin table-label-style{
+  display:flex;
+  padding:0.1em;
+}
+@mixin table-content-paragraph-style{
+  margin-bottom: 0.1em;
+  padding:0.1em 1em 0.1em 1em;
+}
+// START CSS
+
+.bg{
+  @include bg-style;
+  width: 300mm;
+  padding: 1em;
+}
+
+/* SIDENAV */
+.sidenav {
+  @include sidenav-style;
+}
+.sidenav-button {
+  @include sidenav-button-style;
+}
+.sidenav-button span {
+  @include sidenav-button-span;
+}
+.sidenav-content {
+  @include sidenav-content-style;
+}
+/* END OF SIDENAV */
+
+.main-title{
+  @include main-title-style;
+}
+
+/* SUBTITLE */
+.sub-title-container{
+  display:flex;
+  width:100%;
+}
+.sub-title{
+  @include sub-title-style;
+  border-bottom: 1px solid #000; 
+  line-height: 0.1em;
+  padding-left:1.5em;
+}
+.sub-title span { 
+  background:#fff; 
+  padding:0 10px; 
+}
+/* END OF SUBTITLE */
+
+/* BOXES */
+.box-container{
+  @include box-container-style;
+  flex-direction:row;
+}
+.box{
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  align-items:center;
+  height:auto;
+  margin-bottom: 1em;
+}
+
+.img-box{
+  @include img-box-style;
+}
+.img-box img{
+  @include img-box-img-style;
+}
+
+/* TABLE */
+.table-container{
+  @include table-container-style;
+  flex-direction:row;
+}
+.table-label{
+  @include table-label-style;
+  font: 1.3em "Cambria";
+  text-align:center;
+}
+
+.table-content{
+  @include table-content-style;
+}
+
+.table-content-paragraph{
+  @include table-content-paragraph-style;
+}
+.table-content-paragraph-title{
+  font: 1.3em "Cambria";
+  padding:0em 0.5em 0.2em 0.5em;
+}
+.table-content-paragraph-desc{
+  padding:0.25em 0.5em 0 0.5em;
+  font:1.2em "Cambria";
+  border-top:0.2em rgb(170, 165, 165) solid;
+}
+
+/* TABLE PERIOD */
+.table-period-period{
+  padding:0.1em;
+  width:45%;
+}
+.table-period-strip{
+  width:10%;
+}
+
+/* IF SMALLER SCREEN SIZE */
+@media (max-width:1200px){
+  .bg{
+    @include bg-style;
+    display:block;
+    width: 100%;
+    padding: 1em;
+  }
+  /* SIDENAV */
+  .sidenav {
+    @include sidenav-style;
+  }
+  .sidenav-button {
+    @include sidenav-button-style;
+    padding-right:0.3em;
+  }
+  .sidenav-button span {
+    @include sidenav-button-span;
+  }
+  .sidenav-content {
+    @include sidenav-content-style;
+  }
+  /* END OF SIDENAV */
+  
+  .main-title{
+    @include main-title-style;
+  }
+  /* SUBTITLE */
+  .sub-title-container{
+    width:100%;
+    height:auto;
+    text-align:center;
+  }
+  .sub-title{
+    @include sub-title-style;
+    border-bottom: 0.15em solid #000; 
+    line-height: auto;
+    padding-left:0;
+  }
+  .sub-title span { 
+    background:#fff;
+    margin:0;
+  }
+  /* END OF SUBTITLE */
+
+  /* BOXES */
+  @mixin box-container-style{
+    display:flex;
+    flex-wrap:wrap;
+    width:100%;
+  }
+  .box-container{
+    @include box-container-style;
+    flex-direction:column;
+  }
+  .box{
+    display:inline-block;
+    align-items:center;
+    width:100%;
+    height:auto;
+    padding:0 1em 0 1em;
+  }
+  .img-box{
+    @include img-box-style;
+    padding:auto;
+  }
+  .img-box img{
+    @include img-box-img-style;
+  }
+  /* END OF BOXES */
+  /* TABLE */
+  .table-container{
+    @include table-container-style;
+    flex-direction:column;
+  }
+  .table-label{
+    @include table-label-style;
+    font: 1.2em "Cambria";
+    width:100%;
+  }
+
+  .table-content{
+    @include table-content-style;
+  }
+  .table-content-paragraph{
+    @include table-content-paragraph-style;
+  }
+  .table-content-paragraph-title{
+    display:block;
+    padding:0.2em 0.5em 0.2em 0.5em;
+    font: 1.4em "Cambria";
+  }
+  .table-content-paragraph-desc{
+    display:block;
+    padding:0.25em 0.5em 0 0.5em;
+    font:1.25em "Cambria";
+    border-top:0.18em rgb(170, 165, 165) solid;
+  }
+  /* TABLE PERIOD */
+  .table-period-period{
+    padding:0 0.5em 0 0.5em;
+    width:auto;
+  }
+  .table-period-strip{
+    width:auto;
+  }
+}

@@ -1,6 +1,7 @@
 import React, { useRef, useState, useEffect } from "react";
 
-import './App.css';
+// import './App.css';
+import './App.scss';
 // import en_flag from './img/uk.png';
 // import de_flag from './img/ger.png';
 
@@ -20,7 +21,7 @@ function App() {
   const [bodyData, setBodyData] = useState([]);
   const [language, setLanguage] = useState("en");
 
-  const changeLanguage_ = (e) => {
+  const changeLanguage = (e) => {
     setLanguage(e.target.value);
     toggleNav()
   }
@@ -69,7 +70,7 @@ function App() {
 
   return (
     <div>
-      {/* test sidenav */}
+      {/* sidenav */}
       <div className="sidenav"
         ref={node}
         style={{
@@ -79,10 +80,13 @@ function App() {
         <div
           className="sidenav-button"
         >
-          <button type="button"
-            className="btn btn-primary"
-            onClick={e => toggleNav()}
-          > &#9776; </button>
+          {/* change button logo */}
+          {
+            isOpen?
+            <span onClick={e => toggleNav()}>&#62;</span>:
+            <span onClick={e => toggleNav()}>&#60;</span>
+          }
+
         </div>
         <div
           className="sidenav-content"
@@ -91,7 +95,7 @@ function App() {
           }}
         >
           <select
-            onChange={changeLanguage_}
+            onChange={changeLanguage}
             style={{
               fontSize:'1.3em',
             }}

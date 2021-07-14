@@ -25,13 +25,17 @@ const Box = ({boxDatum}) => {
                 boxDatum.content.map((ctx, idx)=>{
                   switch(boxDatum.type){
                     case "img":
+                      let dir = require('../img/'+ctx).default;
                       return(
-                          <div
-                              className="img-box"
-                              key = {idx}
-                          >
-                              <img src={ctx} alt="chickun" />
-                          </div>
+                        <div className="img-box" key={idx}>
+                          <img src={dir}
+                            style={{
+                              width:boxDatum.imgwidth,
+                              height:boxDatum.imgheight
+                            }}
+                                alt="chickun" />
+                        </div>
+
                       );
                     case "table-period":
                       return(

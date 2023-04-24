@@ -19,7 +19,7 @@ function App() {
 
   const [title, setTitle] = useState(input_data.title);
   const [bodyData, setBodyData] = useState([]);
-  const [language, setLanguage] = useState("en");
+  const [language, setLanguage] = useState("de");
 
   const changeLanguage = (e) => {
     setLanguage(e.target.value);

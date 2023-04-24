@@ -1,7 +1,7 @@
 const input_data ={
   en:{
     //first body
-    title:"RESUME",
+    title:"RESUME (not yet updated)",
     data:[
       {
           subtitle:'PERSONAL INFORMATION',
@@ -12,7 +12,7 @@ const input_data ={
               imgwidth:"auto",
               imgheight: "15em",
               content:[
-                "pic_compressed.png"
+                "pic_compressed.jpg"
               ]
             },
             {
@@ -276,7 +276,7 @@ const input_data ={
               imgwidth:"auto",
               imgheight: "15em",
               content:[
-                "pic_compressed.png"
+                "pic_compressed.jpg"
               ]
             },
             {
@@ -341,8 +341,8 @@ const input_data ={
                     to:"07/2020",
                     data:[
                         {
-                            title:"Informatik (Information Engineering) Studium an der Universität „Universitas Gadjah Mada“, Yogyakarta, Mittel Java.",
-                            desc:"Titel: S.T. Information Engineering (entspricht Diplom Ingenieur in Deutschland)"
+                            title:"Technische Informatik (Information Engineering), Universität „Universitas Gadjah Mada“, Yogyakarta, Indonesien. Note: 3,41 auf 4,00",
+                            desc:"Titel: S.T. Information Engineering (entspricht Diplom Ingenieur oder B. Eng in Deutschland)"
                         }
                     ]
                 }, //end of third data
@@ -353,7 +353,7 @@ const input_data ={
         //end of 2nd body
         //third body
         {
-          subtitle:'COURSES AND SEMINARS',
+          subtitle:'KURSE UND SEMINARE',
           contents:[
             {
               type: "table-period",
@@ -392,6 +392,17 @@ const input_data ={
                             desc:""
                         }
                     ]
+                },
+                //fourth data
+                {
+                    from:"02/2022",
+                    to:"07/2022",
+                    data:[
+                        {
+                            title:"Propädeutikum (DSH-Vorbereitungskurs), Technische Universität Berlin, Berlin, Deutschland",
+                            desc:""
+                        }
+                    ]
                 }
               ]
             },
@@ -399,7 +410,7 @@ const input_data ={
         },//end of third body
         //fourth body
         {
-          subtitle:'BERUFLICHER WERDEGANG',
+          subtitle:'TÄTIGKEITEN',
           contents:[
             {
               type: "table-period",
@@ -412,8 +423,8 @@ const input_data ={
                     to:"02/2019",
                     data:[
                         {
-                            title:"Praktikum im Software-Entwicklung-Gebiet bei IT-Firma „Indonesian Cloud“, Jakarta.",
-                            desc:"Unser Team wurde beauftragt, ein Dashboard-System zu entwerfen und zu erstellen, Beobachtung und Überprüfung in den internen Managementdaten wie Abwesenheit und Produktivität von den Mitarbeitern. Wir fangen von Grundlage an bis zur der Entwicklung des Mock-Ups. "
+                            title:"Praktikum im Software-Entwicklung-Gebiet bei IT-Firma „Indonesian Cloud“, Jakarta, Indonesien.",
+                            desc:"Unser Team wurde beauftragt, ein Dashboard-System zu entwerfen und zu erstellen, Beobachtung und Überprüfung in den internen Managementdaten wie Abwesenheit und Produktivität von den Mitarbeitern. Wir fangen von Grundlage an bis zu der Entwicklung des Mock-Ups."
                         }
                     ]
                 },
@@ -423,8 +434,19 @@ const input_data ={
                     to:"12/2020",
                     data:[
                         {
-                            title:"Als Assistent von Professoren bei „Digital Talent Scholarship“ 2020, Jakarta.",
+                            title:"Als Assistent von Professoren bei „Digital Talent Scholarship“ 2020, Jakarta, Indonesien.",
                             desc:"Digital Talent Scholarship ist ein Ausbildungsprogramm, das vom Ministerium für Kommunikation und Informatik geleitet wurde. Das Programm wurde von Experten wie Professoren oder renommierten Institutionen unterstützt. Ich habe die Professoren während des Seminars assistiert. Die Aufträge des Assistenten sind u.a. die Module zu überprüfen, die Aufgaben der Teilnehmer/-innen zu bewerten und die Seminarteilnehmer/-innen zu unterrichten."
+                        }
+                    ]
+                },
+                //third data
+                {
+                    from:"10/2019",
+                    to:"03/2020",
+                    data:[
+                        {
+                            title:"Mitarbeiter, Burger King, Yogyakarta, Indonesien.",
+                            desc:""
                         }
                     ]
                 },
@@ -432,6 +454,74 @@ const input_data ={
             }
           ]
         },//end of fourth body
+        //fourth,5 body
+        {
+          subtitle:'ORGANISATION',
+          contents:[
+            {
+              type: "table-period",
+              width: "90%",
+              firstcolumnwidth:"23%",
+              content:[
+                //first data
+                {
+                    from:"09/2017",
+                    to:"09/2018",
+                    data:[
+                        {
+                            title:"Leiter der Abteilung Liturgie, KMKT UGM (katholische studentische Organisation in der Fakultät für Ingenieurwissenschaften an der Universität „Universitas Gadjah Mada“), Yogyakarta, Indonesien.",
+                            desc:""
+                        }
+                    ]
+                },
+                //second data
+                {
+                    from:"2017",
+                    to:"2018",
+                    data:[
+                        {
+                            title:"Mitglied der Öffentlichkeitsarbeit-Abteilung, KMTETI UGM (studentische Organisation im Fachbereich Elektrotechnik und Informationstechnologie), Yogyakarta, Indonesien.",
+                            desc:""
+                        }
+                    ]
+                },
+                //third data
+                {
+                    from:"2017",
+                    to:"2018",
+                    data:[
+                        {
+                            title:"Mitglied der Abteilung „PR und Design- und Publikationsabteilung“, Misa Kampus UGM (Katholische studentische Organisation an der Universität „Universitas Gadjah Mada“), Yogyakarta, Indonesien.",
+                            desc:""
+                        }
+                    ]
+                },
+                //fourth data
+                {
+                    from:"",
+                    to:"2018",
+                    data:[
+                        {
+                            title:"Co-Moderator (Co-Facilitator), PPSMB PALAPA UGM (Orientierung der neuen Studierenden an der Universität „Universitas Gadjah Mada“), Yogyakarta, Indonesien.",
+                            desc:""
+                        }
+                    ]
+                },
+                //fifth data
+                {
+                    from:"",
+                    to:"10/2022",
+                    data:[
+                        {
+                            title:"Leiter der „Seminar KMKI Berlin“, KMKI Berlin (Indonesische katholische studentische Organisation), Berlin, Deutschland.",
+                            desc:""
+                        }
+                    ]
+                },
+              ]
+            }
+          ]
+        },//end of fourth,5 body
         //fifth body
         {
             subtitle:"SPRACHEN",
@@ -455,11 +545,11 @@ const input_data ={
                             data:[
                                 {
                                     title:"Englisch",
-                                    desc:"Sehr gut in Wort und Schrift, IELTS Academic (Note: 7 von 9)."
+                                    desc:"Verhandlungssicher, IELTS Academic (Note: 7 von 9)."
                                 },
                                 {
                                     title:"Deutsch",
-                                    desc:"Gut in Wort und Schrift, C1 Niveau."
+                                    desc:"Verhandlungssicher, DSH 2 Niveau/Niveau C1 (Note: 71% in schriftliche Prüfung und 72% in mündliche Prüfung)."
                                 }
                             ]
                         },
@@ -515,16 +605,12 @@ const input_data ={
                                     title:"Schwimmen",
                                     desc:""
                                 },
-                                {
-                                    title:"Reisen",
-                                    desc:""
-                                },
                             ]
                         },
                     ]
                 }
             ]
-        }, //end of fifth body
+        }, //end of seventh body
     ]
   },
   
